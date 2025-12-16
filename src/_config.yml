@@ -97,8 +97,8 @@ exclude:
   - docs/_config.yml
 
 aux_links:
-  Telegram: https://t.me/tinocanada
-
+  'Nosso Grupo': https://t.me/tinocanada
+  'github': https://github.com/ti-no-canada
 
 
 # Footer last edited timestamp
@@ -107,7 +107,7 @@ last_edit_time_format: "%b %e %Y at %I:%M %p" # uses ruby's time format: https:/
 
 # Footer "Edit this page on GitHub" link text
 gh_edit_link: true # show or hide edit this page link
-gh_edit_link_text: "Edit this page on GitHub."
+gh_edit_link_text: "Achou algo errado ou tem alguma sugestão? Edite esta página no GitHub."
 gh_edit_repository: "https://github.com/ti-no-canada/ti-no-canada.github.io" # the github URL for your repo
 gh_edit_branch: "master" # the branch that your docs is served from
 gh_edit_source: src # the source that your files originate from
