@@ -1,96 +1,56 @@
----
-title: Informações Gerais
-nav_order: 2
----
+# Repositório oficial da comunidade TI no Canadá
 
-# Geral
+O [Portal TI no Canadá](https://ti-no-canada.github.io) é o site oficial da comunidade TI no Canadá no Telegram, servindo como um centro de recursos, atualizações e informações. Contribuições são bem-vindas através de **Pull Requests**.
 
-Repositório do grupo no Telegram **TI no Canadá**, para uma melhor experiência, accesse o nosso [portal](https://ti-no-canada.github.io/portal/).
+## Como Contribuir
 
-[![Grupo oficial no Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white&label=Grupo%20Oficial)](https://t.me/tinocanada)
-[![Repositório Oficial](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white&label=Repositório%20Oficial)](https://github.com/ti-no-canada)
-[![Regras](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white&label=Regras)](https://ti-no-canada.github.io/portal/docs/grupo/regras-do-grupo)  
+### Configuração do Ambiente de Desenvolvimento Local
 
----
-[![Discussões gerais](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white&label=Discussões)](https://t.me/tinocanada/1)
-[![Meetups](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white&label=Meetups)](https://t.me/tinocanada/142254)
-[![Vagas](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white&label=Vagas)](https://t.me/tinocanada/142250)  
-[![Curriculo](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white&label=Revisao%20Curricular)](https://t.me/tinocanada/142250)  
+1. Clone o repositório:
 
----
+  ```bash
+  git clone https://github.com/ti-no-canada/ti-no-canada.github.io.git
+  ```
 
-Consulte nosso [Glossário](https://ti-no-canada.github.io/portal/docs/grupo/glossario) para entender palavras ou siglas desconhecidas.
+2. Navegue até o diretório do projeto:
 
-# Informações sobre imigração
+  ```bash
+  cd src
+  ```
 
-- [Informações sobre visto](https://ti-no-canada.github.io/portal/docs/vida/visao-geral)
-- [Como conseguir uma permissão de trabalho no Canadá (Work Permit)](https://ti-no-canada.github.io/portal/docs/trabalho/work-permit)
-- [Feiras de Emprego](https://ti-no-canada.github.io/portal/docs/trabalho/feiras-emprego)
-- [Equivalência de diploma no Canadá](https://ti-no-canada.github.io/portal/docs/estudo/equivalencia-de-diploma)
-- [Tradução Juramentada](https://ti-no-canada.github.io/portal/docs/vida/traducao-juramentada)
-- Estudo de [Inglês](https://ti-no-canada.github.io/portal/docs/estudo/idiomas/ingles) / [Francês](https://ti-no-canada.github.io/portal/docs/estudo/idiomas/frances)
-- [Mapa Mental sobre imigração para o Canadá (em construção)](https://app.mindmapmaker.org/#m:mm1317040e39d442459abc6bbfc9189fff)
+3. Construa e inicie o ambiente de desenvolvimento usando Docker:
 
-# Custo de vida
+  ```bash
+  docker-compose up --build
+  ```
 
-- [Média salarial no Canadá (por profissão) - Site do governo](https://www.jobbank.gc.ca/explorecareers)
-- [Calculadora de salário líquido](https://ca.talent.com/tax-calculator)
-- [Custo de vida no Canadá](https://www.numbeo.com/cost-of-living/in/Toronto)
+4. Acesse o site localmente em `http://localhost:4000`.
 
-# Governo Canadense
 
-### Sites úteis
+5. Se você precisar incluir novas dependências e gerar o arquivo `Gemfile.lock`
 
-- [Site oficial da Imigração para o Canadá](https://www.canada.ca/en/services/immigration-citizenship.html)
-- [VFS Global Brazil - Biometria e envio de passaporte](https://www.vfsglobal.ca/canada/brazil/index.html)
-- [Previsão do tempo e dados históricos](https://weather.gc.ca/canada_e.html)
-- [Statistics Canada](https://www.statcan.gc.ca/eng/start)
-- [Verifique se seu consultor de imigração é autorizado](https://iccrc-crcic.ca/find-a-professional)
+```bash
+docker run --rm -v "${PWD}:/usr/src/app" -w /usr/src/app ruby:3.2 bundle install
+```
 
-### Aplicativos úteis
+Sinta-se à vontade para contribuir e ajudar a melhorar esta plataforma!
 
-#### CanPR _(Aplicativo de terceiros)_
+## Sobre o Template Jekyll
 
-Informações sobre imigração e processos como o [Express Entry](https://ti-no-canada.github.io/portal/docs/vida/dicas-de-inverno).
+Este projeto utiliza o tema [Just the Docs] para Jekyll, que oferece suporte para:
 
-- [Android](https://play.google.com/store/apps/details?id=maaz.canpr.myapplication&hl=en_CA)
-- [iOS](https://apps.apple.com/ca/app/canpr/id1447024170)
+- Implantação no GitHub Pages via Actions
+- Builds e previews locais
+- Fácil personalização e suporte a plugins
 
-#### CBSA CanBorder _(Aplicativo do governo canadense)_
+## Licenciamento
 
-Fornece tempos de espera estimados em portos de entrada no Canadá.
+Este repositório está licenciado sob a [Licença MIT]. Sinta-se à vontade para reutilizar ou estender o código, e nos avise como podemos melhorá-lo!
 
-- [Android](https://play.google.com/store/apps/details?id=ca.gc.cbsa.canborder.bwt&hl=en_CA)
-- [iOS](https://apps.apple.com/ca/app/cbsa-canborder/id1110491634)
+[Just the Docs](https://just-the-docs.github.io/just-the-docs/)
+[use this template](https://github.com/just-the-docs/just-the-docs-template/generate)
+[Licença MIT](https://pt.wikipedia.org/wiki/Licen%C3%A7a_MIT)
 
-#### CanBorder – eDeclaration _(Aplicativo do governo canadense)_
-
-Economize tempo na chegada ao Canadá com declarações eletrônicas.
-
-- [Android](https://play.google.com/store/apps/details?id=ca.gc.cbsa.edeclaration&hl=en_CA)
-- [iOS](https://apps.apple.com/ca/app/canborder-edeclaration/id1209044444)
-
-# Mercado de TI no Canadá
-
-- [Sites de empregos no Canadá](https://ti-no-canada.github.io/portal/docs/trabalho/sites-de-emprego)
-- [Feiras de emprego](https://ti-no-canada.github.io/portal/docs/trabalho/feiras-emprego)
-- [Trabalho remoto](https://ti-no-canada.github.io/portal/docs/trabalho/trabalho-remoto)
-- [Dicas para entrevistas e currículos](https://ti-no-canada.github.io/portal/docs/trabalho/Entrevistas-de-emprego)
-
-# Províncias e territórios do Canadá
-
-Cada província e território possui características únicas. Consulte os links abaixo para mais informações:
-
-- [Alberta](https://ti-no-canada.github.io/portal/docs/vida/alberta/visao-geral)
-- [British Columbia](https://ti-no-canada.github.io/portal/docs/vida/british-columbia/visao-geral) 
-- [Manitoba](https://ti-no-canada.github.io/portal/docs/vida/manitoba/visao-geral)
-- [Newfoundland and Labrador](https://ti-no-canada.github.io/portal/docs/vida/newfoundland-and-labrador/visao-geral) 
-- [New Brunswick](https://ti-no-canada.github.io/portal/docs/vida/new-brunswick/visao-geral)
-- [Nova Scotia](https://ti-no-canada.github.io/portal/docs/vida/nova-scotia/visao-geral) 
-- [Ontario](https://ti-no-canada.github.io/portal/docs/vida/ontario/visao-geral) 
-- [Prince Edward Island](https://ti-no-canada.github.io/portal/docs/vida/prince-edward-island/visao-geral) 
-- [Saskatchewan](https://ti-no-canada.github.io/portal/docs/vida/saskatchewan/visao-geral) 
-- [Quebec](https://ti-no-canada.github.io/portal/docs/vida/quebec/visao-geral)
 
 # Agradecimentos
 

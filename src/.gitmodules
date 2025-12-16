@@ -1,0 +1,3 @@
+[submodule "docs"]
+	path = docs
+	url = https://github.com/ti-no-canada/imigracao-para-o-canada.git

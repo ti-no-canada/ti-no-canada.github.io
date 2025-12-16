@@ -1,0 +1,114 @@
+title: TI no Canadá
+url: https://ti-no-canada.github.io
+repository: https://github.com/ti-no-canada/ti-no-canada.github.io
+description: >
+  O objetivo deste site é auxiliar brasileiros e falantes de português com informações úteis sobre o Canadá. Explore os conteúdos, pesquise constantemente e participe do nosso grupo no Telegram para tirar dúvidas e compartilhar experiências.
+
+# SEO settings
+tagline: Guia completo sobre imigração e vida no Canadá para profissionais de TI
+lang: pt-BR
+author: TI no Canadá
+keywords: >
+  brasileiros no canada, imigrar para o canada, morar no canada, 
+  trabalhar no canada, visto canadense, express entry, 
+  profissionais de TI no canada, tecnologia canada,
+  comunidade brasileira canada, imigracao canada, 
+  emprego ti canada, salarios ti canada, custo de vida canada,
+  processo imigratorio canada, estudar no canada, 
+  programador no canada, desenvolvedor canada
+
+# Open Graph / Social Media
+og_image: /assets/images/favicon.png
+
+# Analytics
+ga_tracking: G-HY1LX183L6
+ga_tracking_anonymize_ip: true 
+
+# Sitemap settings
+sitemap:
+  filename: "/sitemap.xml"
+  exclude:
+    - "/atom.xml"
+    - "/feed.xml"
+    - "/feed/index.xml"
+  include_posts:
+    - "/index.html"
+  change_frequency_name: "change_frequency"
+  priority_name: "priority"
+
+social:
+  name: TI no Canadá
+  links:
+    - https://t.me/tinocanada
+    - https://github.com/ti-no-canada
+
+
+theme: just-the-docs
+nav_enabled: true
+permalink: pretty
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-redirect-from
+  - jekyll-mentions
+  - jemoji
+
+defaults:
+  - scope:
+      path: "docs"
+      type: "pages"
+    values:
+      layout: "default"
+      image: /assets/images/og-image.png
+      author: TI no Canadá
+
+exclude:
+  # from https://github.com/jekyll/jekyll/blob/master/lib/site_template/_config.yml:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  # specific to the theme website:
+  - bin/
+  - lib/
+  - "*.gemspec"
+  - "*.gem"
+  - LICENSE.txt
+  - package.json
+  - package-lock.json
+  - Rakefile
+  - README.md
+  - CODE_OF_CONDUCT.md
+  - docker-compose.yml
+  - Dockerfile
+  # theme test code
+  - fixtures/
+  - docs/assets
+  - docs/.github
+  - docs/_sass
+  - docs/_config.yml
+
+aux_links:
+  Telegram: https://t.me/tinocanada
+
+
+
+# Footer last edited timestamp
+last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
+last_edit_time_format: "%b %e %Y at %I:%M %p" # uses ruby's time format: https://ruby-doc.org/stdlib-2.7.0/libdoc/time/rdoc/Time.html
+
+# Footer "Edit this page on GitHub" link text
+gh_edit_link: true # show or hide edit this page link
+gh_edit_link_text: "Edit this page on GitHub."
+gh_edit_repository: "https://github.com/ti-no-canada/ti-no-canada.github.io" # the github URL for your repo
+gh_edit_branch: "master" # the branch that your docs is served from
+gh_edit_source: src # the source that your files originate from
+gh_edit_view_mode: "edit" # "tree" or "edit" if you want the user to jump into the editor immediately
